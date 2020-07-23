@@ -20,6 +20,11 @@
     src: url('../fonts/Amazon Ember Regular.ttf');
 }
 
+
+@font-face {
+    font-family: 'PFDinDisplayPro';
+    src: url('../fonts/PF DinDisplay Pro.ttf');
+}
 /*reset css*/
 
 html, body, div, span, applet, object, iframe,
@@ -83,6 +88,14 @@ p {
     margin-bottom: 20px;
     -ms-flex-item-align: start;
     align-self: flex-start;
+}
+h1 {
+    font-family: 'PFDinDisplayPro', sans-serif;
+    font-size: 30px;
+    color: #626262;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 80px;
 }
 
 .container {
@@ -287,6 +300,95 @@ h3 {
         box-sizing: border-box;
         img {
             width: 100%;
+        }
+    }
+}
+
+.top-block {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url("../img/main.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 530px;
+    margin-top: 50px;
+    img {
+        margin-bottom: 40px;
+    }
+}
+
+.advantages-block__item {
+    display: flex;
+    font-family: 'PFDinDisplayPro', sans-serif;
+    font-size: 35px;
+    color: #626262;
+    line-height: 1.3;
+    margin-bottom: 35px;
+    span {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+        min-height: 55px;
+        border-radius: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1fcfcc;
+        margin-right: 26px;
+    }
+}
+
+
+.qr-block {
+    display: flex;
+    align-items: center;
+    font-family: 'PFDinDisplayPro', sans-serif;
+    color: #313131;
+    font-size: 24px;
+    line-height: 1.3;
+    img {
+        width: 150px;
+        height: auto;
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .advantages-block__item {
+        font-size: 26px;
+        margin-bottom: 20px;
+        span {
+            width: 35px;
+            height: 35px;
+            min-width: 35px;
+            min-height: 35px;
+        }
+    }
+
+    .qr-block {
+        font-size: 20px;
+        img {
+            width: 130px;
         }
     }
 }
